@@ -9,6 +9,7 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react",
+    "sourceMap": true
   },
   "exclude": ["dist"],
   "include": ["src"]

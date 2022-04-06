@@ -6,7 +6,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: './src/index.tsx',
-    mode: 'none',
+    mode: 'development',
+    devtool: 'eval',
     resolve: { extensions: ['.tsx', '.ts', '.jsx', '.js'] },
     output: {
         path: path.resolve(__dirname, 'dist/'),
@@ -16,7 +17,10 @@ module.exports = {
     },
     // https://webpack.docschina.org/guides/development/#using-webpack-dev-server
     devServer: {
-        static: './dist',
+        devMiddleware: {
+            // https://github.com/webpack/webpack-dev-middleware#publicpath
+            publicPath: '/'
+        }
     },
     module: {
         rules: [
