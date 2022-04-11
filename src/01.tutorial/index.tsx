@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './css/index.scss';
 
 import App from './App';
 
@@ -11,9 +11,8 @@ export function renderDOM(root: Element) {
         <React.StrictMode>
             <App />
         </React.StrictMode>,
-        root
+        root,
     );
 }
 
 export default renderDOM;
-
