@@ -1,5 +1,2 @@
-import renderDOM1 from './01.tutorial/index';
-
-renderDOM1(
-    document.getElementById('root1') || document.body
-);
+import './01.tutorial/index';
+import './02.main-concepts/index';

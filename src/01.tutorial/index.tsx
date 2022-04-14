@@ -6,13 +6,11 @@ import App from './App';
 
 // ===================
 
-export function renderDOM(root: Element) {
-    ReactDOM.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-        root,
-    );
-}
+const container = document.getElementById('root1') || document.body;
 
-export default renderDOM;
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    container,
+);
