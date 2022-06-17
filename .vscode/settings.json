@@ -1,5 +1,6 @@
 // https://juejin.cn/post/6955664681306423327#heading-7
 {
+    "editor.tabSize": 4,
     // prettier规则使用当前目录的.prettierrc.js
     "prettier.configPath": ".prettierrc.js",
     // 保存的时候自动格式化
