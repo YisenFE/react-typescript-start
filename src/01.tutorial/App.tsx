@@ -36,7 +36,7 @@ type BoardState = {
 class Board extends React.Component<BoardProps, BoardState> {
     renderSquare(i: number) {
         return (
-            <Square 
+            <Square
                 value={this.props.squares[i]}
                 onClick={() => this.props.onClick(i)}
             />
