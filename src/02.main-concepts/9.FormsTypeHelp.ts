@@ -19,17 +19,16 @@
 //     numberOfGuests: '2',
 // };
 
-
 // function aaa<T extends AAA>(name: T, value: ReservationState[T]) {
 //     state[name] = value;
-// } 
+// }
 
 // function handler(event: Event) {
 //     if (event.target instanceof HTMLInputElement) {
 //         const target = event.target;
 //         const value = target.type === 'checkbox' ? target.checked : target.value;
 //         const name = target.name;
-    
+
 //         state[name] = value;
 //     }
 // }
