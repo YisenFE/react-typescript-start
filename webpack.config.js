@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: './src/index.tsx',
     mode: 'development',
-    devtool: 'eval',
+    devtool: 'source-map',
     resolve: { extensions: ['.tsx', '.ts', '.jsx', '.js'] },
     output: {
         path: path.resolve(__dirname, 'dist/'),
@@ -39,7 +39,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader', 
+                    'css-loader',
                     'sass-loader'
                 ],
             },
