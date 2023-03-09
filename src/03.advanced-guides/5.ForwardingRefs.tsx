@@ -6,7 +6,7 @@ import React, { ReactNode, MouseEventHandler, useState } from 'react';
 import { rootRender } from '../common/rootRender';
 
 /** 转发 refs 到 DOM 组件 */
-function forwarding_refs_to_DOM_components() {
+function __forwarding_refs_to_DOM_components() {
     type FancyButtonProps = { children: ReactNode; onClick: MouseEventHandler<HTMLButtonElement> };
     const FancyButton = React.forwardRef<HTMLButtonElement, FancyButtonProps>((props, ref) => (
         <button ref={ref} className="fancy-button" onClick={props.onClick}>
@@ -37,7 +37,7 @@ function forwarding_refs_to_DOM_components() {
 
     rootRender(document.getElementById('root3_5_1') || document.body, <App />);
 }
-forwarding_refs_to_DOM_components();
+__forwarding_refs_to_DOM_components();
 
 /** 在高阶组件中转发 refs */
 function __forwarding_refs_in_higher_order_components() {
@@ -81,7 +81,7 @@ function __forwarding_refs_in_higher_order_components() {
             <HOC_FancyButton
                 label={label}
                 handleClick={() => {
-                    console.log('handleClick');
+                    console.log('handleClick', ref);
                     setLabel('Click me!!');
                 }}
                 ref={ref}
