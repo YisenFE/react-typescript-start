@@ -7,8 +7,10 @@ type Props = {
 export function AppWrap({ children, id }: Props) {
     return (
         <React.Fragment>
-            <span className="chapter-tip">{id}</span>
-            {children}
+            <React.StrictMode>
+                <span className="chapter-tip">{id}</span>
+                {children}
+            </React.StrictMode>
         </React.Fragment>
     );
 }

@@ -1,0 +1,9 @@
+.tabs {
+    display: flex;
+    .tab-item {
+        border: 1px solid #333;
+        border-radius: 3px;
+        padding: 10px;
+        margin-left: -1px;
+    }
+}
